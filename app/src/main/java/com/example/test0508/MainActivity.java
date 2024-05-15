@@ -19,16 +19,17 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.rvMyData);
 
         List<StuData> stuDataList = new ArrayList<>();
-        stuDataList.add(new StuData(R.drawable.logo, "John", "180"));
-        stuDataList.add(new StuData(R.drawable.logo, "Tom", "175"));
-        stuDataList.add(new StuData(R.drawable.logo, "Jerry", "170"));
-        stuDataList.add(new StuData(R.drawable.logo, "Mike", "165"));
-        stuDataList.add(new StuData(R.drawable.logo, "Jack", "160"));
-        stuDataList.add(new StuData(R.drawable.logo, "Rose", "155"));
-        stuDataList.add(new StuData(R.drawable.logo, "Lily", "150"));
-        stuDataList.add(new StuData(R.drawable.logo, "Lucy", "145"));
-        stuDataList.add(new StuData(R.drawable.logo, "Linda", "140"));
-        stuDataList.add(new StuData(R.drawable.logo, "Marry", "135"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "John", "180"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "John", "180"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Tom", "175"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Jerry", "170"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Mike", "165"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Jack", "160"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Rose", "155"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Lily", "150"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Lucy", "145"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Linda", "140"));
+        stuDataList.add(new StuData("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", "Marry", "135"));
         recyclerView.setAdapter(new StuDataAdapter(stuDataList));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
