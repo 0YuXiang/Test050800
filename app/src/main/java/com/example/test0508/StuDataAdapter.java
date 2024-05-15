@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 class StuDataAdapter extends RecyclerView.Adapter<StuDataAdapter.ViewHolder> {
+
     private  ImageView img;
     private TextView tvName1;
     private TextView tvHeight1;
@@ -47,6 +48,7 @@ class StuDataAdapter extends RecyclerView.Adapter<StuDataAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(View itemView) {
             super(itemView);
+            img = itemView.findViewById(R.id.tvPic);
             tvName1 = itemView.findViewById(R.id.tvname);
             tvHeight1 = itemView.findViewById(R.id.tvHeight);
         }
